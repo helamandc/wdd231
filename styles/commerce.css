@@ -6,7 +6,7 @@
     --secondary-color: #caf0f8;
     --text-color: #333;
     --background-color: #fff;
-    --max-width: 1200px;
+    --max-width: none;
     --padding: 1rem;
 }
 
@@ -29,6 +29,7 @@ body {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: var(--padding);
+    width: 100%;
 }
 
 /* HEADER */
@@ -69,7 +70,7 @@ header {
 
 .navigation ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
     gap: 2rem;
     padding: var(--padding);
