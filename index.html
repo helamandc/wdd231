@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="W01 Assignment: Course Home Page" />
+    <meta name="author" content="Helaman Del Castillo" />
+    <title>Home | Helaman Del Castillo</title>
+    <!-- Preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/commerce.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courselist.js" defer></script>
+</head>
+
+<body onload="displayLastModified()">
+    <header>
+        <div class="logo-name">
+            <img src="images/people-fill.svg" alt="Site Logo" width="50" height="50" />
+            <span>Helaman Del Castillo</span>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section class="info-section">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, placeat culpa. Cupiditate fugit,
+                distinctio accusantium perferendis voluptates incidunt neque iste voluptate, dicta et aliquam
+                consequuntur repellat nemo vero repudiandae! Dolores?</p>
+        </section>
+        <section class="info-section">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Student Photo" width="100" height="100" />
+        </section>
+        <section id="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button data-subject="All">All Courses</button>
+                <button data-subject="WDD">WDD Courses</button>
+                <button data-subject="CSE">CSE Courses</button>
+            </div>
+            <p>Total Credits: <span id="credit-total">0</span></p>
+            <div id="course-container" class="course-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/helamandc" target="_blank" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub" width="24" height="24" />
+            </a>
+            <a href="https://www.linkedin.com/in/helamandelcastillo/" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="24" height="24" />
+            </a>
+            <a href="https://www.facebook.com/helaman.delcastillo" target="_blank" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="Twitter" width="24" height="24" />
+            </a>
+        </div>
+        <p>©<span id="currentyear"></span> 🌏 Melbourne, Australia 🌏 Helaman Del Castillo</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
