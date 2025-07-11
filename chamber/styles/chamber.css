@@ -209,3 +209,69 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #9c9cc4;
 }
+
+/* Additional Footer design */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+footer>div {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links img {
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Additional Header design */
+
+.body-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-name img {
+    height: 150px;
+    width: 120px;
+}
+
+.logo-name span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+nav,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}

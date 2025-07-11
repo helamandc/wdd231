@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Coastal Bytes Studio",
+        "address": "21 Marine Drive, Byron Bay, NSW 2481",
+        "phone": "(02) 4567 8910",
+        "website": "https://coastalbytes.com.au",
+        "icon": "coastal-bytes-logo.png",
+        "membershipLevel": 2,
+        "industry": "Web Development & Design",
+        "founded": 2016,
+        "contactEmail": "info@coastalbytes.com.au"
+    },
+    {
+        "name": "GreenSprout Organics",
+        "address": "105 Grove Rd, Daylesford, VIC 3460",
+        "phone": "(03) 9876 5432",
+        "website": "https://greensproutorganics.com",
+        "icon": "greensprout-icon.svg",
+        "membershipLevel": 3,
+        "industry": "Organic Food Production",
+        "founded": 2010,
+        "contactEmail": "sales@greensproutorganics.com"
+    },
+    {
+        "name": "Outback Innovations",
+        "address": "9 Spinifex St, Alice Springs, NT 0870",
+        "phone": "(08) 3456 7890",
+        "website": "https://outbackinnovations.net",
+        "icon": "outback-logo.jpg",
+        "membershipLevel": 1,
+        "industry": "Renewable Energy Tech",
+        "founded": 2018,
+        "contactEmail": "hello@outbackinnovations.net"
+    },
+    {
+        "name": "Summit Legal Group",
+        "address": "100 Collins St, Melbourne, VIC 3000",
+        "phone": "(03) 9012 3456",
+        "website": "https://summitlegalgroup.com.au",
+        "icon": "summit-legal-logo.png",
+        "membershipLevel": 2,
+        "industry": "Legal Services",
+        "founded": 2005,
+        "contactEmail": "contact@summitlegalgroup.com.au"
+    },
+    {
+        "name": "Sydney Sound Collective",
+        "address": "88 Echo Ln, Newtown, NSW 2042",
+        "phone": "(02) 8123 9876",
+        "website": "https://sydneysoundcollective.com",
+        "icon": "ssc-icon.svg",
+        "membershipLevel": 3,
+        "industry": "Music Production & Licensing",
+        "founded": 2012,
+        "contactEmail": "admin@sydneysoundcollective.com"
+    },
+    {
+        "name": "Treetop Trekkers Pty Ltd",
+        "address": "50 Fern Valley Rd, Lorne, VIC 3232",
+        "phone": "(03) 7654 3210",
+        "website": "https://treetoptrekkers.com.au",
+        "icon": "treetop-trekkers-logo.jpg",
+        "membershipLevel": 1,
+        "industry": "Outdoor Adventure & Tours",
+        "founded": 2014,
+        "contactEmail": "bookings@treetoptrekkers.com.au"
+    },
+    {
+        "name": "Lumina Labs Australia",
+        "address": "12 Quantum Ct, Brisbane, QLD 4000",
+        "phone": "(07) 6789 1234",
+        "website": "https://luminalabs.io",
+        "icon": "lumina-labs-icon.png",
+        "membershipLevel": 2,
+        "industry": "AI and Data Analytics",
+        "founded": 2020,
+        "contactEmail": "team@luminalabs.io"
+    }
+]

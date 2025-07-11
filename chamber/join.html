@@ -14,6 +14,7 @@
     <!-- Google Fonts links -->
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <!-- FaceBook social media meta settings -->
@@ -23,12 +24,10 @@
     <meta property="og:image" content="https://helamandc.github.io/wdd231/chamber/images/hobson-logo.png" />
     <meta property="og:url" content="https://helamandc.github.io/wdd231/chamber/directory.html" />
     <link rel="icon" href="favicon.ico">
-        <script src="scripts/directory.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-
 </head>
 
-<body onload="displayLastModified()" onload="displayLastModified()">
+<body onload="displayLastModified()">
     <header class="body-header">
         <div class="logo-name">
             <a href="directory.html" target="_blank"><img src="images/hobson-icon.png" alt="Hobsons Bay Logo"
@@ -45,8 +44,18 @@
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
-    <main class="main-content">
-        <div id="cards"></div>
+    <main class="main-compose">
+        <form method="get" action="photojournal.html">
+            <fieldset>
+                <legend>What's memorable for today?</legend>
+                <label>Caption* <input type="text" name="caption" required></label>
+                <label>Date* <input type="date" name="date" required></label>
+                <label>Place* <input type="text" name="place" required></label>
+                <label>Unforgettable moments: <textarea name="moments" required></textarea></label>
+                <label>Photo* <input type="file" name="photo" accept="image/*"></label>
+            </fieldset>
+            <input type="submit" value="Add journal entry" id="add-submit">
+        </form>
     </main>
     <footer>
         <div>
