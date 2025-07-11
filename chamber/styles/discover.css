@@ -1,0 +1,152 @@
+:root {
+    --text-align: center;
+    --primary-color: #343484;
+
+}
+
+.body-header {
+    background: #333333;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1,
+h2 {
+    font-family: 'Gochi Hand';
+    color: var(--primary-color);
+}
+
+.main-content {
+    background: #cccccc;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Two columns with equal width */
+    gap: 10px;
+    /* Gap between grid items */
+    background-color: #f1f1f1;
+}
+
+.card {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #343484;
+    padding: 1rem;
+}
+
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #646ca4;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
+}
+
+
+p {
+    text-align: center;
+    margin: 15px;
+    padding: 1px;
+    color: white;
+}
+
+.photodump {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text {
+    margin-top: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.main-header {
+    grid-column: 1 / -1;
+    /* Span across all columns */
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

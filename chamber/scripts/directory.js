@@ -1,12 +1,12 @@
-const member = './data/members.json';
+const memberData = './data/members.json';
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
-    const response = await fetch(member);
+    const response = await fetch(memberData);
     const data = await response.json();
-    //console.table(data); // temp output test of data response 
+    //console.table(data.members); // temp output test of data response 
 
-    displayMembers(data);
+    displayMembers(data.members);
 }
 
 const displayMembers = (members) => {
@@ -14,35 +14,37 @@ const displayMembers = (members) => {
         //Creating section
         const card = document.createElement('section');
 
-        //Creating h2 for full names
-        const fullName = document.createElement('h2');
+        //Icon of company
+        const icon = document.createElement('img');
 
-        //Picture of Member
-        const portrait = document.createElement('img');
+        //Creating h2 for company names
+        const companyName = document.createElement('h2');
 
         //Additional requirements
-        const birthDate = document.createElement('p');
-        const birthPlace = document.createElement('p');
+        const address = document.createElement('p');
+        const phone = document.createElement('p');
+        const website = document.createElement('p');
 
         //Full name of Member
-        fullName.textContent = `${member.name} ${member.lastname}`;
-        birthDate.textContent = `Date of Birth: ${member.birthdate}`;
-        birthPlace.textContent = `Place of Birth: ${member.birthplace}`;
+        companyName.textContent = `${member.name}`;
+        address.textContent = `${member.address}`;
+        phone.textContent = `${member.phone}`;
+        website.textContent = `${member.website}`;
 
 
-        //Attirubute for the picture
-        portrait.setAttribute('src', member.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${member.name} ${member.lastname}`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '140');
-        portrait.setAttribute('height', '180');
+        //Attribute for the icon
+        icon.setAttribute('src', member.icon);
+        icon.setAttribute('alt', `Icon of ${member.name}`);
+        icon.setAttribute('loading', 'lazy');
 
-        //append both h2 and image into the card
-        card.appendChild(fullName);
-        card.appendChild(birthDate);
-        card.appendChild(birthPlace);
+        //append into the card
+        card.appendChild(icon);
+        card.appendChild(companyName);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
 
-        card.appendChild(portrait);
+
 
         //append the card to section
         cards.appendChild(card);
