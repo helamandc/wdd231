@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Picture Album - Helaman Del Castillo</title>
+    <meta name="description" content="Photo Journal">
+    <meta name="author" content="Helaman Del Castillo">
+    <!-- Preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts links -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/photos.css">
+    <link rel="stylesheet" href="styles/photos-large.css">
+    <script src="scripts/photojournal.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body onload="displayLastModified()">
+    <header class="body-header">
+        <a href="photojournal.html" target="_blank"><img src="images/logo.jpg" alt="Photo Journal Logo" height="150"
+                width="300"></a>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="photojournal.html">Journals</a></li>
+                <li><a href="compose.html">Compose</a></li>
+                <li><a href="photos.html">Photos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <header class="main-header">
+            <h2>Photo dump</h2>
+        </header>
+        <div class="card">
+            <img src="https://loremflickr.com/1280/720" alt="sample_photo_dump" loading="lazy" class="photodump">
+        </div>
+        <div class="card">
+            <img src="https://loremflickr.com/1281/720" alt="sample_photo_dump" loading="lazy" class="photodump">
+        </div>
+        <div class="card">
+            <img src="https://loremflickr.com/1282/720" alt="sample_photo_dump" loading="lazy" class="photodump">
+        </div>
+        <div class="card">
+            <img src="https://loremflickr.com/1283/720" alt="sample_photo_dump" loading="lazy" class="photodump">
+        </div>
+        <div class="card">
+            <img src="https://loremflickr.com/1284/720" alt="sample_photo_dump" loading="lazy" class="photodump">
+        </div>
+        <div class="card">
+            <img src="https://loremflickr.com/1285/720" alt="sample_photo_dump" loading="lazy" class="photodump">
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌏 Melbourne, Australia 🌏 Helaman Del Castillo</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
