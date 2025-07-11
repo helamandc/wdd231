@@ -1,5 +1,8 @@
 const memberData = './data/members.json';
 const cards = document.querySelector('#cards');
+const gridBtn = document.getElementById('gridView');
+const listBtn = document.getElementById('listView');
+
 
 async function getMemberData() {
     const response = await fetch(memberData);
@@ -8,6 +11,21 @@ async function getMemberData() {
 
     displayMembers(data.members);
 }
+
+
+// Set default view
+cards.classList.add('grid');
+
+gridBtn.addEventListener('click', () => {
+    cards.classList.remove('list');
+    cards.classList.add('grid');
+});
+
+listBtn.addEventListener('click', () => {
+    cards.classList.remove('grid');
+    cards.classList.add('list');
+});
+
 
 const displayMembers = (members) => {
     members.forEach((member) => {

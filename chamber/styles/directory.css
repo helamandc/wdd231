@@ -34,3 +34,42 @@
     line-height: 1.5;
     color: #646ca4;
 }
+
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+#cards.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#cards section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Grid view */
+#cards.grid p,
+#cards.grid .address,
+#cards.grid .industry,
+#cards.grid .phone,
+#cards.grid .membership,
+#cards.grid .card-text p:not(:first-child) {
+    display: none;
+}
+
+/* List view */
+#cards.list .card-text p,
+#cards.list .card-text h2,
+#cards.list .card-text .industry,
+#cards.list .card-text .phone {
+    display: block;
+}
