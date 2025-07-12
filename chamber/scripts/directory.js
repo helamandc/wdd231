@@ -12,21 +12,6 @@ async function getMemberData() {
     displayMembers(data.members);
 }
 
-
-// Set default view
-cards.classList.add('grid');
-
-gridBtn.addEventListener('click', () => {
-    cards.classList.remove('list');
-    cards.classList.add('grid');
-});
-
-listBtn.addEventListener('click', () => {
-    cards.classList.remove('grid');
-    cards.classList.add('list');
-});
-
-
 const displayMembers = (members) => {
     members.forEach((member) => {
         //Creating section
@@ -70,3 +55,16 @@ const displayMembers = (members) => {
 };
 
 getMemberData();
+
+// Set default view
+cards.classList.add('grid');
+
+gridBtn.addEventListener('click', () => {
+    cards.classList.remove('list');
+    cards.classList.add('grid');
+});
+
+listBtn.addEventListener('click', () => {
+    cards.classList.remove('grid');
+    cards.classList.add('list');
+});
