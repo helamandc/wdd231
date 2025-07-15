@@ -4,13 +4,6 @@ const gridBtn = document.getElementById('gridView');
 const listBtn = document.getElementById('listView');
 
 
-async function getMemberData() {
-    const response = await fetch(memberData);
-    const data = await response.json();
-    //console.table(data.members); // temp output test of data response 
-
-    displayMembers(data.members);
-}
 
 const displayMembers = (members) => {
     members.forEach((member) => {
@@ -68,3 +61,13 @@ listBtn.addEventListener('click', () => {
     cards.classList.remove('grid');
     cards.classList.add('list');
 });
+
+
+
+async function getMemberData() {
+    const response = await fetch(memberData);
+    const data = await response.json();
+    //console.table(data.members); // temp output test of data response 
+
+    displayMembers(data.members);
+}
