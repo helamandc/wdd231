@@ -3,7 +3,18 @@ const cards = document.querySelector('#cards');
 const gridBtn = document.getElementById('gridView');
 const listBtn = document.getElementById('listView');
 
+// Set default view
+cards.classList.add('grid');
 
+gridBtn.addEventListener('click', () => {
+    cards.classList.remove('list');
+    cards.classList.add('grid');
+});
+
+listBtn.addEventListener('click', () => {
+    cards.classList.remove('grid');
+    cards.classList.add('list');
+});
 
 const displayMembers = (members) => {
     members.forEach((member) => {
@@ -27,7 +38,6 @@ const displayMembers = (members) => {
         phone.textContent = `${member.phone}`;
         website.textContent = `${member.website}`;
 
-
         //Attribute for the icon
         icon.setAttribute('src', member.icon);
         icon.setAttribute('alt', `Icon of ${member.name}`);
@@ -40,29 +50,10 @@ const displayMembers = (members) => {
         card.appendChild(phone);
         card.appendChild(website);
 
-
-
         //append the card to section
         cards.appendChild(card);
     });
 };
-
-getMemberData();
-
-// Set default view
-cards.classList.add('grid');
-
-gridBtn.addEventListener('click', () => {
-    cards.classList.remove('list');
-    cards.classList.add('grid');
-});
-
-listBtn.addEventListener('click', () => {
-    cards.classList.remove('grid');
-    cards.classList.add('list');
-});
-
-
 
 async function getMemberData() {
     const response = await fetch(memberData);
@@ -71,3 +62,5 @@ async function getMemberData() {
 
     displayMembers(data.members);
 }
+
+getMemberData();
