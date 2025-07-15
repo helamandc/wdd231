@@ -16,6 +16,14 @@ listBtn.addEventListener('click', () => {
     cards.classList.add('list');
 });
 
+async function getMemberData() {
+    const response = await fetch(memberData);
+    const data = await response.json();
+    //console.table(data.members); // temp output test of data response 
+
+    displayMembers(data.members);
+}
+
 const displayMembers = (members) => {
     members.forEach((member) => {
         //Creating section
@@ -54,13 +62,5 @@ const displayMembers = (members) => {
         cards.appendChild(card);
     });
 };
-
-async function getMemberData() {
-    const response = await fetch(memberData);
-    const data = await response.json();
-    //console.table(data.members); // temp output test of data response 
-
-    displayMembers(data.members);
-}
 
 getMemberData();
