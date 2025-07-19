@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/directory.css">
     <!-- FaceBook social media meta settings -->
     <meta property="og:title" content="WDD 231 - Chamber Directory Page - Helaman Del Castillo" />
     <meta property="og:description"
@@ -23,7 +24,10 @@
     <meta property="og:image" content="https://helamandc.github.io/wdd231/chamber/images/hobson-icon.png" />
     <meta property="og:url" content="https://helamandc.github.io/wdd231/chamber/directory.html" />
     <link rel="icon" href="favicon.ico">
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temp.js" defer></script>
+
 </head>
 
 <body onload="displayLastModified()">
@@ -37,58 +41,62 @@
     </header>
     <nav>
         <ul class="navigation">
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
-    <main class="main-content">
-        <header class="main-header">
-        </header>
-        <div class="card">
-            <img src="https://picsum.photos/1280/720" alt="sample_journal_entry" loading="lazy" class="journaldump">
-            <h3 class="text">Welcome to Melbourne!</h3>
-            <p class="text">October 30, 2018, Wednesday</p>
-            <p class="text">Melbourne, Victoria, Australia</p>
-            <p class="text">Back to zero. Starting our lives all over again in this new country.</p>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/1281/720" alt="sample_journal_entry" loading="lazy" class="journaldump">
-            <h3 class="text">First full-time job in Aussie</h3>
-            <p class="text">January 20, 2019, Monday</p>
-            <p class="text">Preston, Victoria, Australia</p>
-            <p class="text">Lockdown and face masks. Work from home became a hit. :|</p>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/1282/720" alt="sample_journal_entry" loading="lazy" class="journaldump">
-            <h3 class="text">COVID 19 in Australia</h3>
-            <p class="text">March 3, 2020, Thursday</p>
-            <p class="text">Melbourne, Australia</p>
-            <p class="text">Lockdown and face masks. Work from home became a hit. :|</p>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/1283/720" alt="sample_journal_entry" loading="lazy" class="journaldump">
-            <h3 class="text">Called to serve as Branch counselor</h3>
-            <p class="text">June 3, 2021, Wednesday</p>
-            <p class="text">Melbourne, Victoria, Australia</p>
-            <p class="text">Got to serve in Melbourne 2nd Branch as a counselour to Pres. Terry.</p>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/1284/720" alt="sample_journal_entry" loading="lazy" class="journaldump">
-            <h3 class="text">Ate Daren and Lolo Iko died</h3>
-            <p class="text">September 22, 2022, Saturday</p>
-            <p class="text">Cebu, Philippines</p>
-            <p class="text">Ate Daren died due to eclamsia while Lolo Iko died due to COVID 19</p>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/1285/720" alt="sample_journal_entry" loading="lazy" class="journaldump">
-            <h3 class="text">Finally, we are Permanent Residents!</h3>
-            <p class="text">August 30, 2023, Thursday</p>
-            <p class="text">Melbourne, Victoria, Australia</p>
-            <p class="text">Grateful to Praemium because of the employer sponsorship.</p>
-        </div>
+
+    <main class="homepage-main">
+        <!-- Hero Image Section -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Cityscape - Welcome to Hobsons Bay">
+            <h1>Welcome to the Hobsons Bay Chamber of Commerce</h1>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <a href="join.html" class="join-link">Become a Member Today</a>
+        </section>
+
+        <!-- Current Events Section -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>Local Market Day:</strong> August 2nd at Koornang Park</li>
+                <li><strong>Business Networking Breakfast:</strong> August 10th at The Corner Cafe</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Today's Weather</h2>
+            <p>The current temperature in Hobsons Bay, Victoria, Australia is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+
+        <!-- Company Spotlights -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="company">
+                <h3>Bright Bean Café</h3>
+                <p>Serving Carnegie with ethically sourced coffee since 2015.</p>
+            </div>
+            <div class="company">
+                <h3>TechNest Solutions</h3>
+                <p>Innovating local businesses with custom tech tools.</p>
+            </div>
+            <div class="company">
+                <h3>Green Grove Landscaping</h3>
+                <p>Transforming outdoor spaces into green havens.</p>
+            </div>
+        </section>
     </main>
+
     <footer>
         <div>
             <p><b>Hobsons Bay Chamber of Commerce</b></p>

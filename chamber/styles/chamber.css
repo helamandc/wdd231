@@ -275,3 +275,68 @@ li {
     margin: 0;
     padding: 0;
 }
+
+/*index css updates*/
+
+.homepage-main {
+    padding: 20px;
+    max-width: 960px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cta {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.join-link {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.events,
+.weather,
+.spotlights {
+    margin-bottom: 30px;
+}
+
+.weather .temp {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.spotlights .company {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 4px solid #0077cc;
+}
+
+.company p {
+    color: #343484;
+}
+
+.weather p {
+    color: #343484;
+}
+
+figure {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
