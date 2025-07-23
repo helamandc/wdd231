@@ -25,6 +25,7 @@
     <meta property="og:url" content="https://helamandc.github.io/wdd231/chamber/directory.html" />
     <link rel="icon" href="favicon.ico">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
 </head>
 
 <body onload="displayLastModified()">
@@ -45,14 +46,31 @@
         </ul>
     </nav>
     <main class="main-compose">
-        <form method="get" action="photojournal.html">
+        <form method="get" action="thankyou.html">
             <fieldset>
-                <legend>What's memorable for today?</legend>
-                <label>Caption* <input type="text" name="caption" required></label>
-                <label>Date* <input type="date" name="date" required></label>
-                <label>Place* <input type="text" name="place" required></label>
-                <label>Unforgettable moments: <textarea name="moments" required></textarea></label>
-                <label>Photo* <input type="file" name="photo" accept="image/*"></label>
+                <legend>Welcome aboard! your journey begins here...</legend>
+                <label>First name* <input type="text" name="firstname" title="Enter your first name"
+                        autocomplete="given-name" required></label>
+                <label>Last name* <input type="text" name="lastname" title="Enter your last name"
+                        autocomplete="family-name" required></label>
+                <label>Organizational title* <input type="text" name="title" title="Enter your organizational title"
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required></label>
+                <label>Email address* <input name="email" type="email" title="Enter your email"
+                        autocomplete="email-address" placeholder="e.g. John" required></label>
+                <label>Mobile Number* <input name="mobilePhone" type="tel" title="Enter your mobile phone number"
+                        autocomplete="tel-national" required></label>
+                <label>Select Your Membership Level* </label>
+                <select name="membershipLevel" title="Choose your membership level" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="np">NP Membership – Free for non-profits</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                <label>Organization name* <input type="text" name="organization" title="Enter your organization name"
+                        autocomplete="organization" required></label>
+                <label>Description: <textarea name="desc" required></textarea></label>
+                <input type="hidden" id="formTimestamp" name="formTimestamp" value="">
             </fieldset>
             <input type="submit" value="Add journal entry" id="add-submit">
         </form>
