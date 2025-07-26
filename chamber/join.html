@@ -26,6 +26,7 @@
     <link rel="icon" href="favicon.ico">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/timestamp.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
 </head>
 
 <body onload="displayLastModified()">
@@ -74,6 +75,42 @@
             </fieldset>
             <input type="submit" value="Add journal entry" id="add-submit">
         </form>
+        <div class="membership-cards">
+            <h2>Membership Levels</h2>
+            <div class="card" id="np">
+                <h3>NP Membership</h3>
+                <button onclick="openModal('modal-np')">Learn More</button>
+            </div>
+            <div class="card" id="bronze">
+                <h3>Bronze Membership</h3>
+                <button onclick="openModal('modal-bronze')">Learn More</button>
+            </div>
+            <div class="card" id="silver">
+                <h3>Silver Membership</h3>
+                <button onclick="openModal('modal-silver')">Learn More</button>
+            </div>
+            <div class="card" id="gold">
+                <h3>Gold Membership</h3>
+                <button onclick="openModal('modal-gold')">Learn More</button>
+            </div>
+        </div>
+        <dialog class="modals" id="modal-np">
+            <p>Invitations to community events. Inclusion in nonprofit spotlight newsletter. Access to resource-sharing
+                forums. Volunteer matching service.</p><button onclick="closeModal('modal-np')">Close</button>
+        </dialog>
+        <dialog class="modals" id="modal-bronze">
+            <p>Monthly mention in member newsletter. Access to two professional development webinars/year. Business
+                listing on chamber website.</p><button onclick="closeModal('modal-bronze')">Close</button>
+        </dialog>
+        <dialog class="modals" id="modal-silver">
+            <p>Featured in monthly business showcase article. Priority access to paid networking events. 1 promotional
+                banner ad quarterly.</p><button onclick="closeModal('modal-silver')">Close</button>
+        </dialog>
+        <dialog class="modals" id="modal-gold">
+            <p>Guest speaker invitation at flagship events. Permanent homepage spotlight slot. Social media campaign
+                collaboration. Exclusive access to chamber market trends report. VIP networking with city influencers.
+            </p><button onclick="closeModal('modal-gold')">Close</button>
+        </dialog>
     </main>
     <footer>
         <div>

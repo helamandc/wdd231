@@ -340,3 +340,83 @@ figure {
     margin: 0 auto;
     text-align: center;
 }
+
+.membership-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+    animation: fadeSlideIn 2s ease-in-out;
+}
+
+.card {
+    background-color: #eef;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation on page load */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive positioning */
+.main-compose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/* When on larger screens, use row layout */
+@media (min-width: 768px) {
+    .main-compose {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    form {
+        flex: 1;
+        max-width: 600px;
+    }
+
+    .membership-cards {
+        flex: 1;
+        max-width: 400px;
+    }
+}
+
+/* Optional: center text in membership cards */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+
+.membership-cards p {
+    color: #343484;
+}
+
+dialog p {
+    color: #343484;
+}

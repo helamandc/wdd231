@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="styles/discover.css">
         <link rel="stylesheet" href="styles/chamber.css">
         <link rel="stylesheet" href="styles/chamber-large.css">
+        <link rel="stylesheet" href="styles/thankyou.css">
         <!-- FaceBook social media meta settings -->
         <meta property="og:title" content="WDD 231 - Chamber Directory Page - Helaman Del Castillo" />
         <meta property="og:description"
@@ -27,6 +28,9 @@
         <meta property="og:url" content="https://helamandc.github.io/wdd231/chamber/directory.html" />
         <link rel="icon" href="favicon.ico">
         <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/timestamp.js" defer></script>
+        <script src="scripts/thankyou.js" defer></script>
+
     </head>
 
 <body onload="displayLastModified()">
@@ -47,27 +51,9 @@
         </ul>
     </nav>
     <main class="main-content">
-        <header class="main-header">
-            <h2>Photo dump</h2>
-        </header>
-        <div class="card">
-            <img src="https://loremflickr.com/1280/720" alt="sample_photo_dump" loading="lazy" class="photodump">
-        </div>
-        <div class="card">
-            <img src="https://loremflickr.com/1281/720" alt="sample_photo_dump" loading="lazy" class="photodump">
-        </div>
-        <div class="card">
-            <img src="https://loremflickr.com/1282/720" alt="sample_photo_dump" loading="lazy" class="photodump">
-        </div>
-        <div class="card">
-            <img src="https://loremflickr.com/1283/720" alt="sample_photo_dump" loading="lazy" class="photodump">
-        </div>
-        <div class="card">
-            <img src="https://loremflickr.com/1284/720" alt="sample_photo_dump" loading="lazy" class="photodump">
-        </div>
-        <div class="card">
-            <img src="https://loremflickr.com/1285/720" alt="sample_photo_dump" loading="lazy" class="photodump">
-        </div>
+        <h2>Thank you for joining!</h2>
+        <div id="output"></div>
+        <input type="hidden" id="formTimestamp" name="formTimestamp" value="">
     </main>
     <footer>
         <div>
