@@ -1,0 +1,52 @@
+{
+    "discover": [
+        {
+            "name": "HMAS Castlemaine",
+            "address": "Gem Pier, Syme St, Williamstown VIC 3016",
+            "description": "WWII naval ship museum with interactive maritime exhibits",
+            "photos": "./images/castlemaine.webp"
+        },
+        {
+            "name": "Williamstown Botanic Gardens",
+            "address": "Giffard St & Osborne St, Williamstown VIC 3016",
+            "description": "Heritage gardens with palm avenue, rare trees, and peaceful lake",
+            "photos": "./images/botanical-garden.webp"
+        },
+        {
+            "name": "Scienceworks & Planetarium",
+            "address": "2 Booker St, Spotswood VIC 3015",
+            "description": "Hands-on science museum and immersive space-themed planetarium",
+            "photos": "./images/planetarium.webp"
+        },
+        {
+            "name": "Altona Dog Beach (PA Burns Reserve)",
+            "address": "Altona Rd, Altona VIC 3018",
+            "description": "Leash-free beach for dogs with stunning coastal views and sunset vibes",
+            "photos": "./images/dog-reserve.webp"
+        },
+        {
+            "name": "Newport Railway Museum",
+            "address": "26 Champion Rd, Newport VIC 3015",
+            "description": "Vintage trains and locomotives celebrating Victoria’s railway history",
+            "photos": "./images/newport-railway.webp"
+        },
+        {
+            "name": "Cherry Lake",
+            "address": "Millers Rd, Altona VIC 3018",
+            "description": "Lakeside walkways, BBQ spots, birdwatching, and family-friendly atmosphere",
+            "photos": "./images/cherry-lake.webp"
+        },
+        {
+            "name": "The Substation",
+            "address": "1 Market St, Newport VIC 3015",
+            "description": "Former electrical substation turned dynamic experimental arts venue",
+            "photos": "./images/substation.webp"
+        },
+        {
+            "name": "Truganina Explosives Reserve",
+            "address": "Queen St, Altona VIC 3018",
+            "description": "Historic explosives depot with walking trails and interpretive signage",
+            "photos": "./images/explosive-reserve.webp"
+        }
+    ]
+}

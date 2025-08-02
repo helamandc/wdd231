@@ -1,0 +1,44 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+#cards section {
+    display: grid;
+    grid-template-areas:
+        "image"
+        "title"
+        "description";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    gap: 0.5rem;
+}
+
+#cards section img {
+    grid-area: image;
+    height: 120px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    box-shadow: 0 0 1rem #555;
+    border-radius: 6px;
+}
+
+#cards section h2 {
+    grid-area: title;
+    font-size: 1.3rem;
+    margin: 0.5rem 0 0;
+}
+
+#cards section p {
+    grid-area: description;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #646ca4;
+    margin: 0.25rem 0;
+}
