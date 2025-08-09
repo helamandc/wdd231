@@ -1,6 +1,3 @@
-/* Google Font Import */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
-
 :root {
     --primary-color: #846C5B;
     --secondary-color: #EDD9A3;
@@ -105,7 +102,7 @@ header {
 }
 
 /* MAIN */
-main {
+.homepage-main {
     padding: var(--padding);
     display: block;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
