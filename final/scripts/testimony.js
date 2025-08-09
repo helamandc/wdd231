@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const response = await fetch("data/testimony.json");
             if (!response.ok) {
-                throw new Error("Failed to load testimony data");
+                throw new Error(await response.text());
             }
 
             const data = await response.json();
@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             testimonyContainer.appendChild(grid);
+            console.log('Data received successfully:', data);
         } catch (error) {
             testimonyContainer.textContent = "Unable to load testimonies at this time.";
             console.error("Error loading testimonies:", error);

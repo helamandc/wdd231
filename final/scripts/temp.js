@@ -16,8 +16,9 @@ async function apiFetch() {
         } else {
             throw Error(await response.text());
         }
+        console.log('Data received successfully:', data);
     } catch (error) {
-        console.log(error);
+        console.log('Error loading temperature:', error);
     }
 }
 
