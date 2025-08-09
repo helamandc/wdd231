@@ -1,15 +1,10 @@
+import { getEventsData1 } from './getevents.mjs';
+
 const eventsData = './data/events.json';
 const cards = document.querySelector('#cards');
 
 // Set default grid view
 cards.classList.add('grid');
-
-async function getEventsData() {
-    const response = await fetch(eventsData);
-    const data = await response.json();
-
-    displayEvents(data.events);
-}
 
 const displayEvents = (events) => {
     events.forEach((event) => {
@@ -56,4 +51,4 @@ const displayEvents = (events) => {
     });
 };
 
-getEventsData();
+getEventsData1(eventsData, displayEvents);

@@ -1,3 +1,5 @@
+import { getEventsData1 } from './getevents.mjs';
+
 const eventsData = './data/events.json';
 const cards = document.querySelector('#cards');
 
@@ -20,12 +22,6 @@ function openModal(photoSrc, descriptionText, eventName) {
     modal.querySelector('.close-modal').addEventListener('click', () => {
         modal.close();
     });
-}
-
-async function getEventsData() {
-    const response = await fetch(eventsData);
-    const data = await response.json();
-    displayEvents(data.events);
 }
 
 const displayEvents = (events) => {
@@ -65,4 +61,4 @@ const displayEvents = (events) => {
     });
 };
 
-getEventsData();
+getEventsData1(eventsData, displayEvents);

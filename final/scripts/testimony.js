@@ -1,15 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     const testimonyContainer = document.getElementById("testimony");
 
-    // Fetch the JSON data
-    fetch("data/testimony.json")
-        .then((response) => {
+    async function loadTestimonies() {
+        try {
+            const response = await fetch("data/testimony.json");
             if (!response.ok) {
                 throw new Error("Failed to load testimony data");
             }
-            return response.json();
-        })
-        .then((data) => {
+
+            const data = await response.json();
             const testimonies = data.testimony;
 
             // Create a grid container
@@ -23,7 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 const iframe = document.createElement("iframe");
                 iframe.src = item.url.replace("watch?v=", "embed/");
                 iframe.title = item.title;
-                iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
                 iframe.allowFullscreen = true;
                 iframe.width = "100%";
                 iframe.height = "200";
@@ -37,9 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             testimonyContainer.appendChild(grid);
-        })
-        .catch((error) => {
+        } catch (error) {
             testimonyContainer.textContent = "Unable to load testimonies at this time.";
-            console.error(error);
-        });
+            console.error("Error loading testimonies:", error);
+        }
+    }
+
+    loadTestimonies();
 });
