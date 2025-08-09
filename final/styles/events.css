@@ -1,0 +1,68 @@
+/* Base styles for the events section */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+/* Individual event card */
+#cards section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+#cards section:hover {
+    transform: translateY(-5px);
+}
+
+/* Event image */
+#cards img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Text container */
+.card-text {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Event name */
+.card-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Schedule, location, and description */
+.card-text .schedule,
+.card-text .location,
+.card-text .description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Optional: Add icons or styling for each type */
+.card-text .schedule::before {
+    content: "🕒 ";
+}
+
+.card-text .location::before {
+    content: "📍 ";
+}
+
+.card-text .description::before {
+    content: "📝 ";
+}

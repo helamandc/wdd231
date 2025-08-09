@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final Project: Melbourne | Peace in Christ">
+    <meta name="author" content="Helaman Del Castillo">
+    <title>Course Home Page | Helaman Del Castillo</title>
+    <!-- Preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/final.css" />
+    <link rel="stylesheet" href="styles/thankyou.css" />
+    <!-- Essential Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Melbourne | Peace in Christ" />
+    <meta property="og:description" content="Sharing messages of peace in Victoria and Tasmania." />
+    <meta property="og:image"
+        content="https://www.churchofjesuschrist.org/imgs/45e59c1c726d11ec9eb5eeeeac1ea79d5f76a9ce/full/!1280%2C674/0/default" />
+    <meta property="og:url" content="https://helamandc.github.io/wdd231/" />
+    <link rel="icon" href="final-faveicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/final.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body onload="displayLastModified()" onload="renderCourses()">
+    <header>
+        <div class="logo-name">
+            <a href="index.html"><img src="images/final-logo.webp" alt="Site Logo" /></a>
+            <span>Melbourne | Peace in Christ</span>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h2>Thank you! One of our missionaries will contact you as soon as possible...</h2>
+        <div id="output"></div>
+        <input type="hidden" id="formTimestamp" name="formTimestamp" value="">
+    </main>
+
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/helamandc" target="_blank" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub" width="24" height="24" />
+            </a>
+            <a href="https://www.linkedin.com/in/helamandelcastillo/" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="24" height="24" />
+            </a>
+            <a href="https://www.facebook.com/helaman.delcastillo" target="_blank" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="Twitter" width="24" height="24" />
+            </a>
+        </div>
+        <p>©<span id="currentyear"></span> 🌏 Melbourne, Australia 🌏 Helaman Del Castillo</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

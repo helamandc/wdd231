@@ -1,0 +1,109 @@
+{
+    "events": [
+        {
+            "event": "Sunday Worship Service",
+            "schedule": "Sundays, 9:30:00 AM",
+            "location": "123 Lonsdale St, Melbourne VIC",
+            "description": "Weekly sacrament meeting and gospel study. Open to all.",
+            "photos": "./images/sunday-worship.webp"
+        },
+        {
+            "event": "Gospel Study Class",
+            "schedule": "Sundays, 10:30:00 AM",
+            "location": "123 Lonsdale St, Melbourne VIC",
+            "description": "Group study of scriptures and gospel principles.",
+            "photos": "./images/gospel-study.webp"
+        },
+        {
+            "event": "M1 Fastbreaker Potluck (Soup Sunday)",
+            "schedule": "1st Sunday, 4:30 PM",
+            "location": "123 Lonsdale St, Melbourne VIC",
+            "description": "Bring soup and bread to share after fasting. Social and spiritual gathering.",
+            "photos": "./images/fast-break.webp"
+        },
+        {
+            "event": "Temple Night",
+            "schedule": "Thursdays, 6:30 PM",
+            "location": "76 Cathies Ln, Wantirna South VIC",
+            "description": "Sacred ordinances and reflection.",
+            "photos": "./images/temple-night.webp"
+        },
+        {
+            "event": "Youth Activity Night",
+            "schedule": "Fridays, 6:30 PM",
+            "location": "Caulfield Ward, 5 Hawthorn Rd, Caulfield VIC",
+            "description": "Fun and faith-building activities for youth ages 12–18.",
+            "photos": "./images/youth-activity.webp"
+        },
+        {
+            "event": "Relief Society Gathering",
+            "schedule": "1st Sunday, 12:30 PM",
+            "location": "Yarraville Ward, 33 High St, Yarraville VIC",
+            "description": "Womens group meeting for spiritual growth and service planning.",
+            "photos": "./images/relief_activity.webp"
+        },
+        {
+            "event": "Primary Childrens Activity",
+            "schedule": "Monthly, 1st Sat 10:00 AM",
+            "location": "Blackburn Ward, 55-59 Whitehorse Rd, Blackburn VIC",
+            "description": "Gospel-centered activities for children ages 3–11.",
+            "photos": "./images/primary-activity.webp"
+        },
+        {
+            "event": "Seminary Classes",
+            "schedule": "Weekdays, 6:30 AM",
+            "location": "186/198 Westgarth St, Northcote VIC 3070",
+            "description": "Scripture study for high school students before school.",
+            "photos": "./images/seminary-class.webp"
+        },
+        {
+            "event": "Stake Conference",
+            "schedule": "Biannual, Sat Sun",
+            "location": "186/198 Westgarth St, Northcote VIC 3070",
+            "description": "Regional gathering with talks from leaders and music.",
+            "photos": "./images/stake-con.webp"
+        },
+        {
+            "event": "Missionary Fireside",
+            "schedule": "Quarterly, last Sun 6:00 PM",
+            "location": "76 Cathies Ln, Wantirna South VIC 3152",
+            "description": "Inspirational talks and testimonies from full-time missionaries.",
+            "photos": "./images/fire-side.webp"
+        },
+        {
+            "event": "Christmas Devotional",
+            "schedule": "December, 1st Sun 6:00 PM",
+            "location": "186/198 Westgarth St, Northcote VIC 3070",
+            "description": "Seasonal music, scripture readings, and community celebration.",
+            "photos": "./images/christmas-devo.webp"
+        },
+        {
+            "event": "Youth Temple Trip",
+            "schedule": "Quarterly, Sat 8:00 AM",
+            "location": "76 Cathies Ln, Wantirna South VIC 3152",
+            "description": "Youth participate in baptisms for the dead and learn about temple service.",
+            "photos": "./images/youth-temple.webp"
+        },
+        {
+            "event": "Come, Follow Me Study Group",
+            "schedule": "Weekly, Wed 7:00 PM",
+            "location": "76 Cathies Ln, Wantirna South VIC 3152",
+            "description": "Group discussion of weekly gospel study curriculum.",
+            "photos": "./images/come-follow.webp"
+        },
+        {
+            "event": "Family History Workshop",
+            "schedule": "Monthly, Sat 2:00 PM",
+            "location": "186/198 Westgarth St, Northcote VIC 3070",
+            "description": "Learn to trace your ancestry using FamilySearch tools.",
+            "photos": "./images/family-history.webp"
+        },
+        {
+            "event": "Service Project Day",
+            "schedule": "Monthly, Sat 9:00 AM",
+            "location": "76 Cathies Ln, Wantirna South VIC 3152",
+            "description": "Members gather to serve in local charities, clean parks, or assist neighbors.",
+            "photos": "./images/service-day.webp"
+        }
+    ]
+}

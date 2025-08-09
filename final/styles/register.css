@@ -1,0 +1,85 @@
+/* Base layout for the main content */
+.main-compose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+    background-color: #f0f4f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Fieldset and legend styling */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Label and input styling */
+label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #444;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #fefefe;
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Submit button container */
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/* Submit button */
+.form-actions input[type="submit"] {
+    background-color: #846C5B;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-actions input[type="submit"]:hover {
+    background-color: #EDD9A3;
+}
